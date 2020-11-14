@@ -3,16 +3,19 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+typedef double f64;
+
+#define STR(var) #var
+
 int main() 
 {
-	double Celsius = 0.0;
-	double Farenheit = 0.0;
+	f64 Celsius = 0.0;
 
-	printf("Celsius: ");
-	scanf_s("%lf", &Celsius);
+	printf("%s: ", STR(Celsius));
+	scanf("%lf", &Celsius);
 
-	printf("Celsius = %lf\n", Celsius);
+	printf("%s = %lf\n", STR(Celsisus), Celsius);
 	
-	system("pause");
+	system("pause"); //Only works on windows
 	return 0;
 }
