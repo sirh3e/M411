@@ -4,17 +4,19 @@
 *   Date: 10.11.20 
 */
 
-// Imports
+// Includes
 #include <stdio.h>
 #include <stdlib.h>
 
-double Umfang = 0.0;
-int main() 
-{
-    // double Umfang = 0.0;
+#define STR(var) #var
 
-    Umfang = 11.45;
-    printf("Umfang = %lf\n", Umfang);
+typedef double f64;
+
+int main()
+{
+    f64 Umfang = 11.45;
+    
+    printf("%s = %lf\n", STR(Umfang), Umfang);
     return 0;
 }
 
