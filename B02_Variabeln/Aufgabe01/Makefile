@@ -4,7 +4,12 @@ CFLAGS	:= -Wall -Wextra -O3
 SRCS 	:= Aufgabe01.c
 TARGET	:= Aufgabe01
 
-all:
+all: build
+
+run:
+	./$(TARGET)
+
+build:
 	$(CC) $(CFLAGS) $(SRCS) -o $(TARGET)
 
 clean:
